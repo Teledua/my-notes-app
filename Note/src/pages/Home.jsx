@@ -4,7 +4,7 @@ import MainNote from '../Components/MainNote'
 import { db } from '../firebase-config'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { collection, doc, getDoc, setDoc } from 'firebase/firestore'
-Vite + React
+
 
 const Home = () => {
  const currentDateTime = new Date().toLocaleString();
