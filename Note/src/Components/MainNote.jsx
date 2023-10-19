@@ -63,9 +63,13 @@ const navigate=useNavigate;
       <form onSubmit={saveNote} className='h-screen border-b-4 p-2.5'>
         <input onChange={handleChangeTitle} className='block w-full h-20 border-4' type="text" name="" required autoFocus value={title} />
         <textarea onChange={handleChangeNote} name="" placeholder='Write something here...' className='h-4/6 w-full border-4 mt-2.5' required value={note} />
-        <button className='absolute bottom-28 right-5 text-white font-bold bg-emerald-500 active:bg-emerald-300 py-2 px-10 rounded-full'>Save</button>
+         <div className='flex justify-end gap-2 mt-3'>
+      <button className='  text-white font-bold bg-red-500 py-2 px-8 rounded-full active:bg-red-300' ><Link to="/">Sign out</Link></button>
+      <button className='  text-white font-bold bg-emerald-500 active:bg-emerald-300 py-2 px-10 rounded-full'>Save</button>
+      </div>
+        
       </form>
-      <button className='absolute bottom-28 right-40 text-white font-bold bg-red-500 py-2 px-10 rounded-full active:bg-red-300' ><Link to="/">Sign out</Link></button>
+     
       {/* <div className='p-3'>
           <h1 className='font-bold'>Title</h1>
           <div>note</div>

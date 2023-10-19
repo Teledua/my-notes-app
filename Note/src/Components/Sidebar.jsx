@@ -19,7 +19,8 @@ const Sidebar = ({ noteInfo, deleteNote }) => {
             <div className={`p-5  hover:bg-emerald-400 hover:text-white`}>
               <div className='flex justify-between'>
                 <strong className='truncate'>{note.title}</strong>
-                <button type='button' onClick={() => deleteNote(note.id)} className='text-red-500'>Delete</button>
+                <button type='button' onClick={() => deleteNote(note.id)} className='hidden text-red-500 md:block'>Delete</button>
+                 <button type='button' onClick={() => deleteNote(note.id)} className='text-red-500 md:hidden'>X</button>
               </div>
 
             <p className='my-2.5 truncate'>{note.note}</p>
